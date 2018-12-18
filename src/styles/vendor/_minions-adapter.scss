@@ -1,0 +1,227 @@
+// ========= margin/padding =========
+.mt-1p { margin-top: 1px }
+.mt-2p { margin-top: 2px }
+.mt-3p { margin-top: 3px }
+.mt-4p { margin-top: 4px }
+.mr-1p { margin-right: 1px }
+.mr-2p { margin-right: 2px }
+.mr-3p { margin-right: 3px }
+.mr-4p { margin-right: 4px }
+.mb-1p { margin-bottom: 1px }
+.mb-2p { margin-bottom: 2px }
+.mb-3p { margin-bottom: 3px }
+.mb-4p { margin-bottom: 4px }
+.ml-1p { margin-left: 1px }
+.ml-2p { margin-left: 2px }
+.ml-3p { margin-left: 3px }
+.ml-4p { margin-left: 4px }
+
+.pt-1p { padding-top: 1px }
+.pt-2p { padding-top: 2px }
+.pt-3p { padding-top: 3px }
+.pt-4p { padding-top: 4px }
+.pr-1p { padding-right: 1px }
+.pr-2p { padding-right: 2px }
+.pr-3p { padding-right: 3px }
+.pr-4p { padding-right: 4px }
+.pb-1p { padding-bottom: 1px }
+.pb-2p { padding-bottom: 2px }
+.pb-3p { padding-bottom: 3px }
+.pb-4p { padding-bottom: 4px }
+.pl-1p { padding-left: 1px }
+.pl-2p { padding-left: 2px }
+.pl-3p { padding-left: 3px }
+.pl-4p { padding-left: 4px }
+
+.ml-a { margin-left: auto }
+.mr-a { margin-right: auto }
+
+@include breakpoints(from-xl) {
+  .mt-4p\@xl {
+    margin-top: 4px;
+  }
+}
+
+
+// ========= border =========
+.br-3p { border-radius: 3px }
+
+.bw-0 { border-width: 0 }
+
+.bs-n { border-style: none }
+
+
+// ========= text/fonts =========
+.fs-9p { font-size: 9px }
+
+.fs-i { font-style: italic }
+
+@include breakpoints(from-sm) {
+  .fs-2\@sm { font-size: 18px; }
+  .fs-3\@sm { font-size: 16px; }
+  .fs-4\@sm { font-size: 14px; }
+}
+
+.ff-mono { font-family: monospace }
+
+.lh-1 { line-height: 1 }
+
+.lh-ih { line-height: inherit }
+
+.to-e { text-overflow: ellipsis }
+
+.wb-ba { word-break: break-all }
+
+.tt-uc { text-transform: uppercase }
+
+.ta-r\! { text-align: right !important }
+
+.fw-b { font-weight: bold }
+
+.ww-br { word-wrap: break-word }
+
+
+// ========= flex =========
+.d-f { display: flex }
+.d-if { display: inline-flex }
+
+.fd-r { flex-direction: row }
+.fd-c { flex-direction: column }
+
+.jc-sb { justify-content: space-between }
+
+.d-if\@sm {
+  @include breakpoints(from-sm) { display: inline-flex }
+}
+
+.fd-cr {
+  flex-direction: column-reverse;
+}
+
+.fd-rr {
+  flex-direction: row-reverse;
+}
+
+.fd-rr\@md {
+  @include breakpoints(from-med) {
+    flex-direction: row-reverse;
+  }
+}
+
+.fd-r\@xl {
+  @include breakpoints(from-xl) {
+    flex-direction: row;
+  }
+}
+
+.jc-fe\@md {
+  @include breakpoints(from-med) {
+    justify-content: flex-end;
+  }
+}
+
+.fg-0 { flex-grow:0 }
+.fg-1 { flex-grow:1 }
+
+.f-1\<md {
+  @include breakpoints(to-med) { flex: 1 }
+}
+
+@include breakpoints(from-xl) {
+  .f-1\@xl {
+    flex: 1;
+  }
+}
+
+
+// ========= flex basis =========
+.fb-25\% {
+  flex-basis: 25%;
+}
+
+.fb-33\% {
+  flex-basis: 33.3334%;
+}
+
+.fb-50\% {
+  flex-basis: 50%;
+}
+
+.fb-66\% {
+  flex-basis: 66.6667%;
+}
+
+.fb-75\% {
+  flex-basis: 75%;
+}
+
+.fb-100\% {
+  flex-basis: 100%;
+}
+
+.fb-a {
+  flex-basis: auto;
+}
+
+@include breakpoints(from-xl) {
+  .fb-33\%\@xl {
+    flex-basis: 33.3334%;
+  }
+
+  .fb-a\@xl {
+    flex-basis: auto;
+  }
+}
+
+
+// ========= z-index =========
+.zi-1 { z-index: 1 }
+.zi-5 { z-index: 5 }
+.zi-10 { z-index: 10 }
+.zi-100 { z-index: 100 }
+.zi-200 { z-index: 200 }
+.zi-300 { z-index: 300 }
+.zi-400 { z-index: 400 }
+.zi-500 { z-index: 500 }
+.zi-600 { z-index: 600 }
+.zi-700 { z-index: 700 }
+.zi-800 { z-index: 800 }
+.zi-900 { z-index: 900 }
+
+
+// ======== opacity ========
+.o-1{opacity:1}
+.o-\.9{opacity:.9}
+.o-\.8{opacity:.8}
+.o-\.7{opacity:.7}
+.o-\.6{opacity:.6}
+.o-\.5{opacity:.5}
+.o-\.4{opacity:.4}
+.o-\.3{opacity:.3}
+.o-\.2{opacity:.2}
+.o-\.1{opacity:.1}
+.o-0{opacity:0}
+
+
+// ========= misc =========
+.d-n\@lg\! {
+  @include breakpoints(from-lg) { display: none !important }
+}
+
+.va-m { vertical-align: middle }
+
+.mw-100\% { max-width: 100% }
+
+.zi-1 { z-index: 1 }
+
+input[type=text].w-a { width: auto }
+
+.lsp-i { list-style-position: inside }
+
+.o-h { overflow: hidden }
+
+.cl-b { clear: both }
+
+.rotate90-to-lg {
+  @include breakpoints(to-lg) { transform: rotate(90deg) }
+}

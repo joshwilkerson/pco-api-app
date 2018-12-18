@@ -1,0 +1,84 @@
+.app-details {
+  background: adjust-color($lightGray, $lightness: 2.5%);
+  border: 1px solid adjust-color($lightGray, $lightness: -8%);
+  padding: 1.375em 1.5em;
+  margin: .75em 0 1.25em 0;
+  display: block;
+  border-radius: 4px;
+
+  .app-details--header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5em;
+
+    @include breakpoints(from-xl) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    h2 {
+      margin-bottom: .25em;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .app-details--data {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 1em 0 0 0;
+
+    @include breakpoints(from-xl) {
+      flex-direction: row;
+    }
+
+    .column {
+      width: 100%;
+
+      @include breakpoints(from-xl) {
+        width: calc(50% - 1em);
+      }
+    }
+  }
+
+  label,
+  input,
+  .content-well {
+    width: 100%;
+  }
+
+  label {
+    font-size: .85em;
+  }
+
+  input,
+  .content-well {
+    outline: none;
+    border: 1px solid adjust-color($lightGray, $lightness: -15%);
+    background: #fff;
+    border-radius: 3px;
+    padding: .75em 1em;
+    margin: .25em 0 1em 0;
+    font-size: 1em;
+    color: $base_font_color;
+    font-family: $base_font;
+    box-sizing: border-box;
+  }
+
+  .content-well {
+    overflow: scroll;
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: .5em;
+    }
+  }
+}

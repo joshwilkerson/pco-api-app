@@ -1,0 +1,78 @@
+.btn {
+  background: $button-primary;
+  color: #fff;
+  border: 1px solid $button-primary;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  padding: .75em .825em .825em .825em;
+  text-decoration: none;
+  box-sizing: border-box;
+
+  &:hover {
+    background: adjust-color($button-primary, $lightness: 4%);
+  }
+
+  .symbol {
+    width: 1em;
+    height: 1em;
+    position: relative;
+    top: 1px;
+    margin: 0 .25em 0 .125em;
+  }
+
+  &.btn--secondary {
+    background: $button-secondary;
+    border: 1px solid $button-secondary;
+    color: $medGray;
+
+    &:hover {
+      background: lighten($button-secondary, 3%);
+    }
+
+    .symbol {
+      fill: $medGray;
+    }
+  }
+
+  &.btn--outline {
+    background: none;
+    color: $button-primary;
+
+    .symbol {
+      fill: $button-primary;
+    }
+
+    &:hover {
+      background: $button-primary;
+      color:#fff;
+
+      .symbol {
+        fill: #fff;
+      }
+    }
+  }
+
+  &.btn--outline.btn--secondary {
+    color: $button-secondary;
+
+    .symbol {
+      fill: $button-secondary;
+    }
+
+    &:hover {
+      background: lighten($button-secondary, 3%);
+      color: $medGray;
+
+      .symbol {
+        fill: $medGray;
+      }
+    }
+  }
+
+  &.btn--sm {
+    font-size: .8em;
+    padding: .375em .5em .475em .5em;
+  }
+}

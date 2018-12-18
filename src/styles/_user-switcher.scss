@@ -1,0 +1,66 @@
+.user {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  background: adjust-color($pco_blue, $lightness: -12%);
+  border-radius: $avatar-size;
+  padding: .25em .5em;
+
+  @include breakpoints(from-med) {
+    background: none;
+    margin: 0 0 0 1em;
+    padding: 0 0 0 1em;
+
+    &:before {
+      content:'';
+      position: absolute;
+      left: 0;
+      top: 5%;
+      height: 90%;
+      width: 1px;
+      background: adjust-color($medGray, $lightness: 30%);
+    }
+  }
+
+  .user--avatar {
+    width: $avatar-size;
+    height: $avatar-size;
+    border-radius: $avatar-size;
+    background: blue;
+    overflow: hidden;
+    border: 1px solid adjust-color($medGray, $lightness: 10%);
+    background: adjust-color($lightGray, $lightness: -10%);
+    margin: 0 .375em 0 0;
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+  }
+
+  .user--name {
+    color: $medGray;
+    display: none;
+
+    @include breakpoints(from-med) {
+      display: block;
+    }
+  }
+
+  .dropdownTrigger {
+    position: relative;
+    margin: 0 0 0 .125em;
+    top: .125em;
+  }
+
+  .symbol {
+    fill: adjust-color($pco_blue, $lightness: -25%);
+    margin-right: .25em;
+
+    @include breakpoints(from-med) {
+      fill: $medGray;
+      margin-right: 0;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i');
+
+$base_font: "Lato", sans-serif;
+$base_font_color: #4a4a4a;
+
+$nav_width_med: 260px;
+$nav_width_lg: 320px;
+$header_height_sm: 18vw;
+$header_height_med: 100px;
+
+$avatar-size: 2.25em;
+
+$pco_blue: #2565f4;
+$lightGray: #F5F5F5;
+$medGray: #808080;
+
+$button-primary: $pco_blue;
+$button-secondary: adjust-color($lightGray, $lightness: -20%);

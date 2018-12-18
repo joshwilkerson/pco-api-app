@@ -1,0 +1,24 @@
+h1, h2, h3, p {
+  margin-top: 0;
+}
+
+h1 {
+  color: $pco_blue;
+  margin: 0 0 .375em 0;
+}
+
+p {
+  line-height: 1.5em;
+  font-weight: 300;
+  margin-bottom: 1em;
+}
+
+a {
+  color: $pco_blue;
+  transition: .15s all ease;
+}
+
+p a {
+  text-decoration: none;
+  font-weight: 700;
+}

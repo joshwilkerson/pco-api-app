@@ -1,0 +1,60 @@
+header {
+  width: 100%;
+  height: $header_height_sm;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  margin: 0;
+  padding: 0 1.5em;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-end;
+  z-index: 100;
+
+  @include breakpoints(from-med) {
+    height: $header_height_med;
+    background: $lightGray;
+    border-bottom: 1px solid adjust-color($lightGray, $lightness: -10%);
+    z-index: 0;
+    padding: 0 2.5em;
+  }
+
+  .externalLinks {
+    display: none;
+
+    @include breakpoints(from-med) {
+      display: block;
+    }
+
+    a {
+      display: inline-flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin: 0 1em 0 0;
+      text-decoration: none;
+      color: $medGray;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:hover {
+        color: adjust-color($medGray, $lightness: -5%);
+
+        .symbol {
+          fill: adjust-color($medGray, $lightness: -5%);
+        }
+      }
+    }
+
+    .symbol {
+      width: 14px;
+      height: 14px;
+      fill: $medGray;
+      margin: 0 .375em 0 0;
+      top: 1px;
+      position: relative;
+    }
+  }
+}

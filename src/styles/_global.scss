@@ -1,0 +1,22 @@
+body {
+  background: #ececec;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: $base_font;
+  color: $base_font_color;
+}
+
+.pageWrapper {
+
+  &> div {
+    position: relative;
+  }
+}
+
+.symbol {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  transition: .15s all ease;
+}
