@@ -24,10 +24,10 @@ const ApplicationDetails = () => (
     <div className="app-details--data">
       <div className="column">
         <label>Client ID:</label>
-        <input type="text" readonly value="2001982910349584902ab39280sbsaqoi182904bn029k0ax9bhlix0919102556a" />
+        <input type="text" readOnly value="2001982910349584902ab39280sbsaqoi182904bn029k0ax9bhlix0919102556a" />
 
         <label>Secret:</label>
-        <input type="text" readonly value="389ba20g3211046973bx920592z3920bm221959603a2948fg5910f9129340a2" />
+        <input type="text" readOnly value="389ba20g3211046973bx920592z3920bm221959603a2948fg5910f9129340a2" />
 
         <label>Callback URLs:</label>
         <div className="content-well">

@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Planning Center API App',
-    description: 'Front-end templates built for v2.0 of our API app',
+    description: 'Front-end templates for Planning Center API app v2',
     author: '@planningcenter',
   },
   plugins: [
