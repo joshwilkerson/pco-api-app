@@ -9,8 +9,8 @@ const Header = () => (
       <img src={logo} alt="Planning Center API"/>
     </div>
 
-    <div className="d-if fd-r ai-c pr-3">
-      <div className="externalLinks">
+    <div className="d-if fd-cr ai-fe fd-r@lg ai-c@lg pr-3">
+      <div className="externalLinks mt-1 mt-0@lg">
         <a href="https://developer.planning.center/docs">
           <Symbol icon="document" />
           Documentation
