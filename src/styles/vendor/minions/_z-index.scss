@@ -1,0 +1,72 @@
+.zi-1 { z-index: 1 }
+.zi-5 { z-index: 5 }
+.zi-10 { z-index: 10 }
+.zi-100 { z-index: 100 }
+.zi-200 { z-index: 200 }
+.zi-300 { z-index: 300 }
+.zi-400 { z-index: 400 }
+.zi-500 { z-index: 500 }
+.zi-600 { z-index: 600 }
+.zi-700 { z-index: 700 }
+.zi-800 { z-index: 800 }
+.zi-900 { z-index: 900 }
+
+@include breakpoints(from-sm) {
+  .zi-1\@sm { z-index: 1 }
+  .zi-5\@sm { z-index: 5 }
+  .zi-10\@sm { z-index: 10 }
+  .zi-100\@sm { z-index: 100 }
+  .zi-200\@sm { z-index: 200 }
+  .zi-300\@sm { z-index: 300 }
+  .zi-400\@sm { z-index: 400 }
+  .zi-500\@sm { z-index: 500 }
+  .zi-600\@sm { z-index: 600 }
+  .zi-700\@sm { z-index: 700 }
+  .zi-800\@sm { z-index: 800 }
+  .zi-900\@sm { z-index: 900 }
+}
+
+@include breakpoints(from-med) {
+  .zi-1\@md { z-index: 1 }
+  .zi-5\@md { z-index: 5 }
+  .zi-10\@md { z-index: 10 }
+  .zi-100\@md { z-index: 100 }
+  .zi-200\@md { z-index: 200 }
+  .zi-300\@md { z-index: 300 }
+  .zi-400\@md { z-index: 400 }
+  .zi-500\@md { z-index: 500 }
+  .zi-600\@md { z-index: 600 }
+  .zi-700\@md { z-index: 700 }
+  .zi-800\@md { z-index: 800 }
+  .zi-900\@md { z-index: 900 }
+}
+
+@include breakpoints(from-lg) {
+  .zi-1\@lg { z-index: 1 }
+  .zi-5\@lg { z-index: 5 }
+  .zi-10\@lg { z-index: 10 }
+  .zi-100\@lg { z-index: 100 }
+  .zi-200\@lg { z-index: 200 }
+  .zi-300\@lg { z-index: 300 }
+  .zi-400\@lg { z-index: 400 }
+  .zi-500\@lg { z-index: 500 }
+  .zi-600\@lg { z-index: 600 }
+  .zi-700\@lg { z-index: 700 }
+  .zi-800\@lg { z-index: 800 }
+  .zi-900\@lg { z-index: 900 }
+}
+
+@include breakpoints(from-xl) {
+  .zi-1\@xl { z-index: 1 }
+  .zi-5\@xl { z-index: 5 }
+  .zi-10\@xl { z-index: 10 }
+  .zi-100\@xl { z-index: 100 }
+  .zi-200\@xl { z-index: 200 }
+  .zi-300\@xl { z-index: 300 }
+  .zi-400\@xl { z-index: 400 }
+  .zi-500\@xl { z-index: 500 }
+  .zi-600\@xl { z-index: 600 }
+  .zi-700\@xl { z-index: 700 }
+  .zi-800\@xl { z-index: 800 }
+  .zi-900\@xl { z-index: 900 }
+}

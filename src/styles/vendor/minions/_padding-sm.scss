@@ -1,0 +1,61 @@
+@include breakpoints(from-sm) {
+  .pt-1p\@sm { padding-top: 1px }
+  .pt-2p\@sm { padding-top: 2px }
+  .pt-3p\@sm { padding-top: 3px }
+  .pt-4p\@sm { padding-top: 4px }
+  .pr-1p\@sm { padding-right: 1px }
+  .pr-2p\@sm { padding-right: 2px }
+  .pr-3p\@sm { padding-right: 3px }
+  .pr-4p\@sm { padding-right: 4px }
+  .pb-1p\@sm { padding-bottom: 1px }
+  .pb-2p\@sm { padding-bottom: 2px }
+  .pb-3p\@sm { padding-bottom: 3px }
+  .pb-4p\@sm { padding-bottom: 4px }
+  .pl-1p\@sm { padding-left: 1px }
+  .pl-2p\@sm { padding-left: 2px }
+  .pl-3p\@sm { padding-left: 3px }
+  .pl-4p\@sm { padding-left: 4px }
+
+  .pl-a\@sm { padding-left: auto }
+  .pr-a\@sm { padding-right: auto }
+
+  .px-1p\@sm {
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+
+  .px-2p\@sm {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+
+  .px-3p\@sm {
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+
+  .px-4p\@sm {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
+  .my-1p\@sm {
+    padding-top: 1px;
+    padding-bottom: 1px;
+  }
+
+  .my-2p\@sm {
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+
+  .my-3p\@sm {
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+
+  .my-4p\@sm {
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+}

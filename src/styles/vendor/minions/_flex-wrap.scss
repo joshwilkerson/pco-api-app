@@ -1,0 +1,27 @@
+.fw-n { flex-wrap:nowrap }
+.fw-w { flex-wrap:wrap }
+.fw-wr { flex-wrap:wrap-reverse }
+
+@include breakpoints(from-md) {
+  .fw-n\@md { flex-wrap:nowrap }
+  .fw-w\@md { flex-wrap:wrap }
+  .fw-wr\@md { flex-wrap:wrap-reverse }
+}
+
+@include breakpoints(from-med) {
+  .fw-n\@md { flex-wrap:nowrap }
+  .fw-w\@md { flex-wrap:wrap }
+  .fw-wr\@md { flex-wrap:wrap-reverse }
+}
+
+@include breakpoints(from-lg) {
+  .fw-n\@lg { flex-wrap:nowrap }
+  .fw-w\@lg { flex-wrap:wrap }
+  .fw-wr\@lg { flex-wrap:wrap-reverse }
+}
+
+@include breakpoints(from-xl) {
+  .fw-n\@xl { flex-wrap:nowrap }
+  .fw-w\@xl { flex-wrap:wrap }
+  .fw-wr\@xl { flex-wrap:wrap-reverse }
+}

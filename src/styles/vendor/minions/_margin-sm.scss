@@ -1,0 +1,61 @@
+@include breakpoints(from-sm) {
+  .mt-1p\@sm { margin-top: 1px }
+  .mt-2p\@sm { margin-top: 2px }
+  .mt-3p\@sm { margin-top: 3px }
+  .mt-4p\@sm { margin-top: 4px }
+  .mr-1p\@sm { margin-right: 1px }
+  .mr-2p\@sm { margin-right: 2px }
+  .mr-3p\@sm { margin-right: 3px }
+  .mr-4p\@sm { margin-right: 4px }
+  .mb-1p\@sm { margin-bottom: 1px }
+  .mb-2p\@sm { margin-bottom: 2px }
+  .mb-3p\@sm { margin-bottom: 3px }
+  .mb-4p\@sm { margin-bottom: 4px }
+  .ml-1p\@sm { margin-left: 1px }
+  .ml-2p\@sm { margin-left: 2px }
+  .ml-3p\@sm { margin-left: 3px }
+  .ml-4p\@sm { margin-left: 4px }
+
+  .ml-a\@sm { margin-left: auto }
+  .mr-a\@sm { margin-right: auto }
+
+  .mx-1p\@sm {
+    margin-left: 1px;
+    margin-right: 1px;
+  }
+
+  .mx-2p\@sm {
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+
+  .mx-3p\@sm {
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+
+  .mx-4p\@sm {
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+
+  .my-1p\@sm {
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }
+
+  .my-2p\@sm {
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+
+  .my-3p\@sm {
+    margin-top: 3px;
+    margin-bottom: 3px;
+  }
+
+  .my-4p\@sm {
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+}

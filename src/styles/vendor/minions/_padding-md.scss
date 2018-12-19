@@ -1,0 +1,61 @@
+@include breakpoints(from-med) {
+  .pt-1p\@md { padding-top: 1px }
+  .pt-2p\@md { padding-top: 2px }
+  .pt-3p\@md { padding-top: 3px }
+  .pt-4p\@md { padding-top: 4px }
+  .pr-1p\@md { padding-right: 1px }
+  .pr-2p\@md { padding-right: 2px }
+  .pr-3p\@md { padding-right: 3px }
+  .pr-4p\@md { padding-right: 4px }
+  .pb-1p\@md { padding-bottom: 1px }
+  .pb-2p\@md { padding-bottom: 2px }
+  .pb-3p\@md { padding-bottom: 3px }
+  .pb-4p\@md { padding-bottom: 4px }
+  .pl-1p\@md { padding-left: 1px }
+  .pl-2p\@md { padding-left: 2px }
+  .pl-3p\@md { padding-left: 3px }
+  .pl-4p\@md { padding-left: 4px }
+
+  .pl-a\@md { padding-left: auto }
+  .pr-a\@md { padding-right: auto }
+
+  .px-1p\@md {
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+
+  .px-2p\@md {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+
+  .px-3p\@md {
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+
+  .px-4p\@md {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
+  .my-1p\@md {
+    padding-top: 1px;
+    padding-bottom: 1px;
+  }
+
+  .my-2p\@md {
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+
+  .my-3p\@md {
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+
+  .my-4p\@md {
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+}

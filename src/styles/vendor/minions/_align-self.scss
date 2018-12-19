@@ -1,0 +1,37 @@
+.as-b { align-self: baseline }
+.as-c { align-self: center }
+.as-fe { align-self: flex-end }
+.as-fs { align-self: flex-start }
+.as-s { align-self: stretch }
+
+@include breakpoints(from-sm) {
+  .as-b\@sm { align-self: baseline }
+  .as-c\@sm { align-self: center }
+  .as-fe\@sm { align-self: flex-end }
+  .as-fs\@sm { align-self: flex-start }
+  .as-s\@sm { align-self: stretch }
+}
+
+@include breakpoints(from-med) {
+  .as-b\@md { align-self: baseline }
+  .as-c\@md { align-self: center }
+  .as-fe\@md { align-self: flex-end }
+  .as-fs\@md { align-self: flex-start }
+  .as-s\@md { align-self: stretch }
+}
+
+@include breakpoints(from-lg) {
+  .as-b\@lg { align-self: baseline }
+  .as-c\@lg { align-self: center }
+  .as-fe\@lg { align-self: flex-end }
+  .as-fs\@lg { align-self: flex-start }
+  .as-s\@lg { align-self: stretch }
+}
+
+@include breakpoints(from-xl) {
+  .as-b\@xl { align-self: baseline }
+  .as-c\@xl { align-self: center }
+  .as-fe\@xl { align-self: flex-end }
+  .as-fs\@xl { align-self: flex-start }
+  .as-s\@xl { align-self: stretch }
+}

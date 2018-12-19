@@ -1,0 +1,67 @@
+.o-1 { opacity:1 }
+.o-\.9 { opacity:.9 }
+.o-\.8 { opacity:.8 }
+.o-\.7 { opacity:.7 }
+.o-\.6 { opacity:.6 }
+.o-\.5 { opacity:.5 }
+.o-\.4 { opacity:.4 }
+.o-\.3 { opacity:.3 }
+.o-\.2 { opacity:.2 }
+.o-\.1 { opacity:.1 }
+.o-0 { opacity:0 }
+
+@include breakpoints(from-sm) {
+  .o-1\@sm { opacity:1 }
+  .o-\.9\@sm { opacity:.9 }
+  .o-\.8\@sm { opacity:.8 }
+  .o-\.7\@sm { opacity:.7 }
+  .o-\.6\@sm { opacity:.6 }
+  .o-\.5\@sm { opacity:.5 }
+  .o-\.4\@sm { opacity:.4 }
+  .o-\.3\@sm { opacity:.3 }
+  .o-\.2\@sm { opacity:.2 }
+  .o-\.1\@sm { opacity:.1 }
+  .o-0\@sm { opacity:0 }
+}
+
+@include breakpoints(from-med) {
+  .o-1\@md { opacity:1 }
+  .o-\.9\@md { opacity:.9 }
+  .o-\.8\@md { opacity:.8 }
+  .o-\.7\@md { opacity:.7 }
+  .o-\.6\@md { opacity:.6 }
+  .o-\.5\@md { opacity:.5 }
+  .o-\.4\@md { opacity:.4 }
+  .o-\.3\@md { opacity:.3 }
+  .o-\.2\@md { opacity:.2 }
+  .o-\.1\@md { opacity:.1 }
+  .o-0\@md { opacity:0 }
+}
+
+@include breakpoints(from-lg) {
+  .o-1\@lg { opacity:1 }
+  .o-\.9\@lg { opacity:.9 }
+  .o-\.8\@lg { opacity:.8 }
+  .o-\.7\@lg { opacity:.7 }
+  .o-\.6\@lg { opacity:.6 }
+  .o-\.5\@lg { opacity:.5 }
+  .o-\.4\@lg { opacity:.4 }
+  .o-\.3\@lg { opacity:.3 }
+  .o-\.2\@lg { opacity:.2 }
+  .o-\.1\@lg { opacity:.1 }
+  .o-0\@lg { opacity:0 }
+}
+
+@include breakpoints(from-xl) {
+  .o-1\@xl { opacity:1 }
+  .o-\.9\@xl { opacity:.9 }
+  .o-\.8\@xl { opacity:.8 }
+  .o-\.7\@xl { opacity:.7 }
+  .o-\.6\@xl { opacity:.6 }
+  .o-\.5\@xl { opacity:.5 }
+  .o-\.4\@xl { opacity:.4 }
+  .o-\.3\@xl { opacity:.3 }
+  .o-\.2\@xl { opacity:.2 }
+  .o-\.1\@xl { opacity:.1 }
+  .o-0\@xl { opacity:0 }
+}
