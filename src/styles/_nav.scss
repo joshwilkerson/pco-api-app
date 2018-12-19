@@ -2,19 +2,18 @@ nav {
   width: 100%;
   height: auto;
   background: adjust-color($pco_blue, $lightness: -8%);
-  display: block;
+  position: relative;
 
   @include breakpoints(from-med) {
-    width: $nav_width_med;
-    min-height: 100vh;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+    width: get($sidebarWidth, med);
   }
 
   @include breakpoints(from-lg) {
-    width: $nav_width_lg;
+    width: get($sidebarWidth, lg);
+  }
+
+  @include breakpoints(from-xl) {
+    width: get($sidebarWidth, xl);
   }
 
   &:before {
@@ -23,39 +22,10 @@ nav {
     top: 0;
     left: 0%;
     width: 100%;
-    height: calc(#{$header_height_med} + 1.5em);
+    height: 2em;
     background: $pco_blue;
     background: linear-gradient(to top, adjust-color($pco_blue, $lightness: -8%) 0%, adjust-color($pco_blue, $lightness: -22%) 100%);
     z-index: 0;
-  }
-
-  .logo {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    height: $header_height_sm;
-    box-sizing: border-box;
-    background: $pco_blue;
-    border-bottom: 1px solid adjust-color($pco_blue, $lightness: -15%);
-    z-index: 1;
-    position: relative;
-    padding: 0 1.5em;
-
-    @include breakpoints(from-med) {
-      justify-content: center;
-      height: $header_height_med;
-      padding: .125em 1.5em 0 1.5em;
-    }
-
-    img {
-      width: 50%;
-      height: auto;
-      display: block;
-
-      @include breakpoints(from-med) {
-        width: 100%;
-      }
-    }
   }
 
   ul {

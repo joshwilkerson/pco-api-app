@@ -13,10 +13,6 @@ const IndexPage = () => (
 
     <ApplicationDetails />
 
-    <ApplicationDetails />
-
-    <ApplicationDetails />
-
     <button className="btn">Register New Application</button>
   </Layout>
 )

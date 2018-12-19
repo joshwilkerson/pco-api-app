@@ -3,16 +3,29 @@
 $base_font: "Lato", sans-serif;
 $base_font_color: #4a4a4a;
 
-$nav_width_med: 260px;
-$nav_width_lg: 320px;
-$header_height_sm: 18vw;
-$header_height_med: 100px;
-
-$avatar-size: 2.25em;
-
 $pco_blue: #2565f4;
 $lightGray: #F5F5F5;
 $medGray: #808080;
 
 $button-primary: $pco_blue;
 $button-secondary: adjust-color($lightGray, $lightness: -20%);
+
+
+$headerHeight: 8em;
+
+$sidebarWidth: (
+  med: 300px,
+  lg: 280px,
+  xl: 320px
+);
+
+$avatar-size: 2.25em;
+
+
+@function get($map, $key) {
+  @if map-has-key($map, $key) {
+      @return map-get($map, $key);
+  } @else {
+      @error "ERROR: Specified index does not exist in the mapping";
+  }
+}

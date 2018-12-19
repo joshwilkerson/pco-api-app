@@ -20,9 +20,11 @@ const Layout = ({ children }) => (
     render={data => (
       <Fragment>
         <Header />
-        <Nav />
-        <div id="content">
-          {children}
+        <div className="contentWrapper">
+          <Nav />
+          <div className="content">
+            {children}
+          </div>
         </div>
       </Fragment>
     )}

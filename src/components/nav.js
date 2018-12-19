@@ -1,15 +1,9 @@
 import React from 'react'
 import { Link } from "gatsby";
 import Symbol from './symbol'
-import logo from '../assets/api-logo.svg'
-
 
 const Nav = () => (
   <nav>
-    <div className="logo">
-      <img src={logo} alt="Planning Center API"/>
-    </div>
-
     <ul>
       <li>
         <Link to="/" activeClassName="active">

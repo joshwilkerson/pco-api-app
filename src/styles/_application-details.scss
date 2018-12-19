@@ -69,7 +69,15 @@
   }
 
   .content-well {
-    overflow: scroll;
+    overflow-x: scroll;
+    position: relative;
+
+    & * {
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+      word-break: break-word;
+      hyphens: auto;
+    }
 
     ul {
       list-style: none;
@@ -79,6 +87,12 @@
 
     li {
       margin-bottom: .5em;
+    }
+
+    p {
+      margin: 0 0 4px 0;
+      display: block;
+
     }
   }
 }
