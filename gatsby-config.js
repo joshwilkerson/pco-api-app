@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/pco-api-app",
   siteMetadata: {
     title: 'Planning Center API App',
     description: 'Front-end templates for Planning Center API app v2',
@@ -23,6 +24,14 @@ module.exports = {
         short_name: 'pco_api',
         start_url: '/'
       },
+    },
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /icons/
+        }
+      }
     }
   ],
 }

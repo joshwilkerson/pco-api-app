@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import IconSprite from './icons/icons.svg'
 
 export default class HTML extends React.Component {
   render() {
@@ -15,6 +16,8 @@ export default class HTML extends React.Component {
           {this.props.headComponents}
         </head>
         <body {...this.props.bodyAttributes}>
+          <IconSprite />
+
           {this.props.preBodyComponents}
           <div
             key={`body`}
