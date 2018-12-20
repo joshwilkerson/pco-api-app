@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{127:function(e,n,t){"use strict";t.r(n);var a=t(0),c=t.n(a),s=t(135),l=t(134);n.default=function(){return c.a.createElement(s.a,null,c.a.createElement(l.a,{title:"Access Tokens"}),c.a.createElement("h1",null,"Access Tokens"))}}}]);
+//# sourceMappingURL=component---src-pages-tokens-js-97d23fbd24db837425e1.js.map
