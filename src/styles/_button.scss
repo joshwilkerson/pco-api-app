@@ -1,25 +1,35 @@
+$button-primary: $pco_blue;
+$button-secondary: adjust-color($lightGray, $lightness: -20%);
+$button-danger: rgb(217, 30, 24);
+
 .btn {
   background: $button-primary;
   color: #fff;
   border: 1px solid $button-primary;
-  display: inline-block;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
-  border-radius: 3px;
-  padding: .75em .825em .825em .825em;
+  border-radius: 4px;
+  padding: 7px 12px 8px 12px;
   text-decoration: none;
   box-sizing: border-box;
+  cursor: pointer;
+  transition: .1s all ease;
+  font-weight: bold;
+  font-family: $base_font;
+  font-size: .875em;
+  letter-spacing: .025em;
 
   &:hover {
     background: adjust-color($button-primary, $lightness: 4%);
   }
 
   .symbol {
-    width: 1em;
-    height: 1em;
+    width: .9em;
+    height: .9em;
     position: relative;
-    top: 1px;
-    margin: 0 .25em 0 .125em;
+    margin: 0 6px 0 2px;
+    fill: currentColor;
   }
 
   &.btn--secondary {
@@ -71,8 +81,51 @@
     }
   }
 
+  &.btn--danger {
+    background: $button-danger;
+    border: 1px solid $button-danger;
+
+    &:hover {
+      background: adjust-color($button-danger, $lightness: 4%);
+    }
+  }
+
+  &.btn--outline.btn--danger {
+    background: none;
+    color: $button-danger;
+
+    .symbol {
+      fill: $button-danger;
+    }
+
+    &:hover {
+      background: $button-danger;
+      color: #fff;
+
+      .symbol {
+        fill: #fff;
+      }
+    }
+  }
+
   &.btn--sm {
-    font-size: .8em;
-    padding: .375em .5em .475em .5em;
+    font-size: .75em;
+    padding: 5px 9px 6px 9px;
+    font-weight: normal;
+
+    .symbol {
+      height: .85em;
+      width: .85em;
+    }
+  }
+}
+
+
+// buttons demo
+.buttons-demo {
+
+  .btn {
+    margin-right: 1em;
+    margin-bottom: 1em;
   }
 }

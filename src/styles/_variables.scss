@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i');
-
 $base_font: "Lato", sans-serif;
 $base_font_color: #4a4a4a;
 
+
+// colors
 $pco_blue: #2565f4;
 $lightGray: #F5F5F5;
 $medGray: #808080;
-
-$button-primary: $pco_blue;
-$button-secondary: adjust-color($lightGray, $lightness: -20%);
+$background: #f9f9f9;
 
 
+// layout/element sizes
 $headerHeight: 8em;
 
 $sidebarWidth: (
@@ -22,6 +22,7 @@ $sidebarWidth: (
 $avatar-size: 2.25em;
 
 
+// helper functions
 @function get($map, $key) {
   @if map-has-key($map, $key) {
       @return map-get($map, $key);
