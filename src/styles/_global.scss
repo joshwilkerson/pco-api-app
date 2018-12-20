@@ -1,14 +1,17 @@
 body {
-  background: #ececec;
+  background: adjust-color($background, $lightness: -2%);
   min-height: 100vh;
   height: 100%;
-  margin: 0;
+  max-width: 105em;
+  margin: 0 auto;
   padding: 0;
   font-family: $base_font;
   color: $base_font_color;
 }
 
 .pageWrapper {
+  background: $background;
+
   &> div {
     min-height: 100vh;
     position: relative;
