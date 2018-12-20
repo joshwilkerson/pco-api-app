@@ -15,7 +15,7 @@ const ApplicationDetails = () => (
         <button className="btn btn--outline btn--sm mr-1">
           <Symbol icon="pencil" />Edit
         </button>
-        <button className="btn btn--outline btn--secondary btn--sm">
+        <button className="btn btn--outline btn--danger btn--sm">
           <Symbol icon="trash" />Delete
         </button>
       </div>
