@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Symbol = ({icon}) => (
-  <svg className="symbol">
-    <use xlinkHref={`#icon-${icon}`} />
+const Symbol = ( props ) => (
+  <svg className={`symbol ${props.className}`}>
+    <use xlinkHref={`#icon-${props.icon}`} />
   </svg>
 )
 
