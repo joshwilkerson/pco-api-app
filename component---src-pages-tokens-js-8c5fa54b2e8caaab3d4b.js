@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{127:function(e,n,t){"use strict";t.r(n);var a=t(0),o=t.n(a),c=t(135),r=t(134);n.default=function(){return o.a.createElement(c.a,null,o.a.createElement(r.a,{title:"Access Tokens"}),o.a.createElement("h1",null,"Access Tokens"),o.a.createElement("p",null,"Are you a programmer looking to quickly connect to your own Planning Center account? Create an access token to use with your own scripts and apps."))}}}]);
+//# sourceMappingURL=component---src-pages-tokens-js-8c5fa54b2e8caaab3d4b.js.map
