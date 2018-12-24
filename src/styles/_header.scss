@@ -66,16 +66,17 @@ header {
       margin: 0 1em 0 0;
       text-decoration: none;
       color: $medGray;
+      font-weight: normal;
 
       &:last-child {
         margin-right: 0;
       }
 
       &:hover {
-        color: adjust-color($medGray, $lightness: -5%);
+        color: adjust-color($medGray, $lightness: -10%);
 
         .symbol {
-          fill: adjust-color($medGray, $lightness: -5%);
+          fill: adjust-color($medGray, $lightness: -10%);
         }
       }
     }

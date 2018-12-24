@@ -17,3 +17,165 @@
     flex:1;
   }
 }
+
+.pane {
+  background: adjust-color($lightGray, $lightness: 2.5%);
+  border: 1px solid adjust-color($lightGray, $lightness: -8%);
+  padding: 1.375em 1.5em;
+  margin: .75em 0 1.25em 0;
+  display: block;
+  border-radius: 4px;
+
+  label {
+    display: block;
+    font-size: .9em;
+    color: $medGray;
+    width: 100%;
+  }
+
+  input,
+  textarea {
+    outline: none;
+    border: 1px solid adjust-color($lightGray, $lightness: -15%);
+    background: #fff;
+    border-radius: 3px;
+    padding: .75em 1em;
+    margin: .5em 0 1em 0;
+    font-size: 1em;
+    color: $base_font_color;
+    font-family: $base_font;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  textarea {
+    min-height: 100px;
+    resize: vertical;
+    line-height: 1.5em;
+  }
+
+  p {
+    font-size: .95em;
+  }
+
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: .75em 1em;
+    margin: .25em 0 1em 0;
+    background: #fff;
+    border-radius: 3px;
+    font-size: 1em;
+    color: $base_font_color;
+    border: 1px solid adjust-color($lightGray, $lightness: -15%);
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .select {
+    position:relative;
+    display: inline;
+
+    &:after {
+      content:"";
+      width:0;
+      height:0;
+      position: absolute;
+      pointer-events: none;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      top: .45em;
+      right: 1em;
+      border-top: 7px solid $base_font_color;
+      opacity: 0.5;
+    }
+
+    &::-ms-expand {
+      display: none;
+    }
+
+    &:last-child {
+      select {
+        margin-bottom: 0;
+      }
+    }
+  }
+} // .pane
+
+
+.pane--columns {
+  display: flex;
+  flex-direction: column;
+
+  @include breakpoints(from-lg) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .column {
+    width: 100%;
+    margin-bottom: 1em;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @include breakpoints(from-lg) {
+      width: calc(50% - 1em);
+      margin-bottom: 0;
+    }
+
+    & * {
+      width: 100%;
+    }
+  } // .column
+} // .pane--columns
+
+
+.content-well {
+  overflow-x: scroll;
+  position: relative;
+  outline: none;
+  border: 1px solid adjust-color($lightGray, $lightness: -15%);
+  background: #fff;
+  border-radius: 3px;
+  padding: .75em 1em;
+  margin: .5em 0 1em 0;
+  font-size: 1em;
+  color: $base_font_color;
+  font-family: $base_font;
+  box-sizing: border-box;
+
+  & * {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: .5em;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  p {
+    margin: 0 0 4px 0;
+    display: block;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

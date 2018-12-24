@@ -7,7 +7,12 @@ body {
   padding: 0;
   font-family: $base_font;
   color: $base_font_color;
+
+  @media (min-width: 105em) {
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
 }
+
 
 .pageWrapper {
   background: $background;
