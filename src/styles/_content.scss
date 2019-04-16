@@ -178,4 +178,19 @@
       margin-bottom: 0;
     }
   }
+} // .content-well
+
+.alert {
+  border-radius: 3px;
+  padding: .75em 1em;
+  margin: 0 0 1em 0;
+
+  &.alert--warning {
+    background: $warning_color;
+  }
+
+  &.alert--danger {
+    background: $danger_color;
+    color: #fff;
+  }
 }

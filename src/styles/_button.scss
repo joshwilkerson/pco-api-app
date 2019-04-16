@@ -1,6 +1,6 @@
 $button-primary: $pco_blue;
 $button-secondary: adjust-color($lightGray, $lightness: -20%);
-$button-danger: rgb(217, 30, 24);
+$button-danger: $danger_color;
 
 .btn {
   background: $button-primary;
