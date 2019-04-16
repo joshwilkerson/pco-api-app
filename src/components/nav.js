@@ -18,6 +18,12 @@ const Nav = () => (
         </Link>
       </li>
       <li>
+        <Link to="authorized" activeClassName="active">
+          <Symbol icon="shield" />
+          Authorized Apps
+        </Link>
+      </li>
+      <li>
         <Link to="webhooks" activeClassName="active">
           <Symbol icon="webhooks" />
           Webhooks
